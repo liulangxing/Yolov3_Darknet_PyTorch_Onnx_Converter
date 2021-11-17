@@ -16,8 +16,8 @@ output_name_1 = session.get_outputs()[0].name
 output_name_2 = session.get_outputs()[1].name
  
 # 阅读图片
-#img_path = 'test_pic/dog.jpg'
-img_path = 'test_pic/giraffe.jpg'
+#img_path = 'dog.jpg'
+img_path = 'giraffe.jpg'
 img = cv2.imread(img_path)
 image_blob = cv2.dnn.blobFromImage(img, 1 / 255.0, network_size, swapRB=True, crop=False)
  
