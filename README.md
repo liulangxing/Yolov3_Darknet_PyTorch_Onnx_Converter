@@ -14,19 +14,29 @@ fork from https://github.com/matankley/Yolov3_Darknet_PyTorch_Onnx_Converter
 
 下载代码及权重文件：
     git clone https://github.com/liulangxing/Yolov3_Darknet_PyTorch_Onnx_Converter
+    
     cd Yolov3_Darknet_PyTorch_Onnx_Converter
+    
     wget https://pjreddie.com/media/files/yolov3.weights
+    
     wget https://pjreddie.com/media/files/yolov3-tiny.weights 
 
 安装环境:
     conda create -n yolov3 python==3.7.4
+    
     conda activate yolov3
+    
     pip install -r requirements.txt -i http://mirrors.aliyun.com/pypi/simple --trusted-host mirrors.aliyun.com
+    
 
 转换命令为:    
     python converter.py yolov3-onnx.cfg yolov3.weights 608 608
+    
     python converter.py yolov3-tiny-onnx.cfg yolov3-tiny.weights 416 416
+    
     
 预测命令为：
     python yolov3_onnx_inference.py
+    
     python yolov3_tiny_onnx_inference.py
+    
